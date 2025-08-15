@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
 
-
-
-
-
-
 class Accueil extends StatelessWidget {
   const Accueil({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: MyHomePage());
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -31,81 +22,114 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Container(
-        height: 700,
-        width: 500,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          
-        ),
-        child: Center(
-              child: Column(
-                children: [
-                  Text("Bienvenue !",
+          height: 700,
+          width: 500,
+          decoration: BoxDecoration(color: Colors.white),
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  "Bienvenue !",
                   style: TextStyle(
                     color: Colors.blue,
                     fontSize: 30,
                     fontWeight: FontWeight.w500,
                   ),
-                  ),
-                  Padding(padding: EdgeInsets.only(bottom: 15)),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(children: [
-                        ElevatedButton(onPressed: (){}, child: Text("ElevatedButton",
-                        style: TextStyle(
-                          fontSize: 20
+                ),
+                Padding(padding: EdgeInsets.only(bottom: 15)),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "ElevatedButton",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.blue,
+                          ),
                         ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.blue
-                        ),
-                        ),
-                      ],),
-                      Column(
-                        children: [
-                          OutlinedButton(onPressed: (){},
-                           child: Text("OutlineButton",
-                           style: TextStyle(
-                            fontSize: 18
-                           ),
-                           ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        OutlinedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "OutlineButton",
+                            style: TextStyle(fontSize: 18),
+                          ),
                           style: OutlinedButton.styleFrom(
-                            
-                            foregroundColor: Colors.blue
+                            foregroundColor: Colors.blue,
                           ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          TextButton(onPressed: (){}, child: Text("TextButton"),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("TextButton"),
                           style: TextButton.styleFrom(
-                              backgroundColor: Colors.blueGrey,
-                              foregroundColor: Colors.white,
-                          ),)
-                        ],
-                      ),
-                    ],
-                  ),
-                 Padding(padding: EdgeInsets.all(8)),
-                  Image.asset(
+                            backgroundColor: Colors.blueGrey,
+                            foregroundColor: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Padding(padding: EdgeInsets.all(8)),
+                Image.asset(
                   'assets/images/Mobile _App.jpeg',
                   height: 220,
                   width: 500,
                   fit: BoxFit.cover,
-                  ),
-                  Padding(padding: EdgeInsets.all(8)),
-                  Image.asset("assets/images/image2.jpeg",
+                ),
+                Padding(padding: EdgeInsets.all(8)),
+                Image.asset(
+                  "assets/images/image2.jpeg",
                   height: 220,
                   width: 500,
                   fit: BoxFit.cover,
-                  ),
-                ],
-              ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
-      )
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text("Ceci est un button flotten"),
+                content: Text(
+                  "Exploration des widgets basique de flutter. Une bonne maîtrise de sec widgets vous serai capable de crer des app moderne et elegant",
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text("Fermer"),
+                  ),
+                ],
+              );
+            },
+          );
+        },
+        backgroundColor: Colors.blueAccent,
+        foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: Icon(Icons.accessibility),
+      ),
     );
   }
 }
