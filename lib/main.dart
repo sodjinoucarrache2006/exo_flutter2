@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/accueil.dart';
 import 'pages/Layout.dart';
 import 'pages/interaction.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(Monappli());
