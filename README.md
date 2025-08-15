@@ -26,7 +26,7 @@ Un projet Flutter personnel pour mettre en pratique les **widgets de base** étu
 - `ElevatedButton`, `OutlinedButton`, `IconButton`, `TextButton`
 - Icônes : `Icons` (Material Design) et `FontAwesome`
 - Images : `Image.asset` (locale) et `Image.network` (internet)
-
+- Texte stylisé avec `GoogleFonts`
 
 ### 🧱 Page 3 – Layout Demo
 
@@ -42,6 +42,10 @@ Un projet Flutter personnel pour mettre en pratique les **widgets de base** étu
 
 ---
 
+## 📦 Packages utilisés
+
+- [`google_fonts`](https://pub.dev/packages/google_fonts)
+- [`font_awesome_flutter`](https://pub.dev/packages/font_awesome_flutter)
 
 ---
 
