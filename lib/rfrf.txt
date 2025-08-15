@@ -1,0 +1,20 @@
+Parfait 👍 tu as aussi vu le PopupMenuButton, donc on va l’intégrer dans le projet.
+
+📍 Je te propose de le mettre dans l’AppBar de la Page 1 (Accueil).
+Quand on clique sur le menu, il affiche plusieurs options :
+
+Idées d’éléments (PopupMenuItem)
+
+"Voir profil" → affiche un SnackBar
+
+"Paramètres" → ouvre un AlertDialog
+
+"Aller à la page Layout" → utilise Navigator.push vers la Page 2
+
+"Quitter" → ferme l’app avec Navigator.pop(context)
+
+📌 Avantages :
+
+Tu montres que tu sais combiner PopupMenuButton avec d’autres widgets comme Navigator, SnackBar, et AlertDialog.
+
+Ça rend le projet plus interactif et complet.
