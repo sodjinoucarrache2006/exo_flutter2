@@ -1,16 +1,65 @@
-# widgets
+# 📱 My Flutter Showcase
 
-A new Flutter project.
+Un projet Flutter personnel pour mettre en pratique les **widgets de base** étudiés : navigation, boutons, mise en page, interactions, et plus encore. Ce projet est structuré en plusieurs pages pour illustrer les différents usages des widgets Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Objectifs pédagogiques
 
-A few resources to get you started if this is your first Flutter project:
+- Maîtriser les **widgets de base** de Flutter
+- Apprendre à organiser une app avec plusieurs pages
+- Comprendre la navigation, les interactions, et le layout
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧱 Structure de l’application
+
+### 🏠 Page 1 – Accueil
+
+- `Scaffold`, `AppBar` avec `PopupMenuButton`
+- `Drawer` personnalisé avec plusieurs options
+- `FloatingActionButton` avec `SnackBar`
+- Navigation vers les autres pages avec `BottomNavigationBar` et `Navigator`
+
+### 🔘 Page 2 – Boutons & Icônes
+
+- `ElevatedButton`, `OutlinedButton`, `IconButton`, `TextButton`
+- Icônes : `Icons` (Material Design) et `FontAwesome`
+- Images : `Image.asset` (locale) et `Image.network` (internet)
+
+
+### 🧱 Page 3 – Layout Demo
+
+- `Column`, `Row`, `Expanded`, `Container`
+- `Padding`, `Divider`, `Center`
+- Bouton de retour avec `Navigator.pop`
+
+### 🔄 Page 4 – Interactions
+
+- `Stepper`
+- `SnackBar` et `AlertDialog`
+- Navigation conditionnelle avec `Navigator.push`
+
+---
+
+
+---
+
+## 🧠 Ce que j’ai appris
+
+- Structurer une app Flutter avec plusieurs widgets complexes
+- Utiliser les widgets pour l’interaction utilisateur
+- Naviguer entre les pages avec `Navigator`
+- Gérer l’état avec `StatefulWidget`
+
+---
+
+## 📸 Aperçu
+
+> *Screenshots à venir*
+
+---
+
+## 👨‍🏫 Projet réalisé dans le cadre de ma formation Flutter.
+
+Merci à mon mentor pour l’accompagnement 🙏
